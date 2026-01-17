@@ -9,7 +9,7 @@ Original file is located at
 
 
 
-!pip install streamlit
+
 
 import numpy as np
 import joblib
