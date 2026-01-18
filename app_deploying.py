@@ -6,7 +6,7 @@ import streamlit as st
 
 # gearbox_failure_prediction.pkl.
 
-model = joblib.load('gearbox_failure_prediction.pkl')
+model = joblib.load('model.pkl')
 
 st.set_page_config(page_title='Gearbox failure Classification', layout="centered")
 st.title('Gearbox failure Classification App')
