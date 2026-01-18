@@ -26,10 +26,10 @@ vibration =st.number_input(" value of vibration",value=None)
 oil_level = st.number_input(" value of oil_level",value=None)
 
 if st.button('Predict'):
-  input_data = np.array([[Load_%,
-                          Temperature_C,
-                          Vibration_mm_s,
-                          Oil_Level_%
+  input_data = np.array([[Load,
+                          Temperature,
+                          Vibration,
+                          Oil_Level
                           ]])
   prediction = model.predict(input_data)[0]
   if prediction == 0:
