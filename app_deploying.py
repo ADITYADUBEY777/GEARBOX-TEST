@@ -23,13 +23,13 @@ st.write("predict whether the is gearbox get fail using different properties")
 Load = st.number_input(" value of load",value=None)
 Temperature = st.number_input(" value of Temperature",value=None)
 Vibration =st.number_input(" value of vibration",value=None)
-Oil_level = st.number_input(" value of oil_level",value=None)
+Oil = st.number_input(" value of oil_level",value=None)
 
 if st.button('Predict'):
   input_data = np.array([[Load,
                           Temperature,
                           Vibration,
-                          Oil_Level
+                          Oil
                           ]])
   prediction = model.predict(input_data)[0]
   if prediction == 0:
