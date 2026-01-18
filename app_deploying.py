@@ -15,7 +15,7 @@ import numpy as np
 import joblib
 import streamlit as st
 
-model = joblib.load('gearbox_failure_prediction.pkl')
+model = joblib.load('model.pkl')
 
 st.set_page_config(page_title='Gearbox Failure predication',layout='centered')
 st.title("Gearbox Failure predication App")
