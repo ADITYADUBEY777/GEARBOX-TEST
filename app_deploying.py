@@ -20,10 +20,10 @@ model = joblib.load('model.pkl')
 st.set_page_config(page_title='Gearbox Failure predication',layout='centered')
 st.title("Gearbox Failure predication App")
 st.write("predict whether the is gearbox get fail using different properties")
-load = st.number_input(" value of load",value=None)
+Load = st.number_input(" value of load",value=None)
 Temperature = st.number_input(" value of Temperature",value=None)
-vibration =st.number_input(" value of vibration",value=None)
-oil_level = st.number_input(" value of oil_level",value=None)
+Vibration =st.number_input(" value of vibration",value=None)
+Oil_level = st.number_input(" value of oil_level",value=None)
 
 if st.button('Predict'):
   input_data = np.array([[Load,
