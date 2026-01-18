@@ -25,10 +25,16 @@ Temperature = st.number_input(" value of Temperature",value=None)
 vibration =st.number_input(" value of vibration",value=None)
 oil_level = st.number_input(" value of oil_level",value=None)
 
-if st.button("Predict"):
-  input_data = np.array([[]])
-  predication = model.predict(input_data)
-  if predication == 1 :
-    st.success("** pass**")
+if st.button('Predict'):
+  input_data = np.array([[Load_%,
+                          Temperature_C,
+                          Vibration_mm_s,
+                          Oil_Level_%
+                          ]])
+  prediction = model.predict(input_data)[0]
+  if prediction == 0:
+    st.success('Fail')
   else:
+    st.success('Pass')
+
     st.error("**fail**")
